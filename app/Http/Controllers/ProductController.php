@@ -28,7 +28,7 @@ class ProductController extends Controller
         $product->price = $Request->price;
         $product->stockquantity = $Request->stockquantity;
         $product->save();
-        return response()->json(['status' => 'created products sucessfully '], 200);
+        return response()->json(['status' => 'created products  '], 200);
     }
     public function update(Request $request,$id){
         $product = products::find($id);
